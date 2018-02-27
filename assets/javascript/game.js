@@ -16,6 +16,7 @@ $(document).ready(function(){
     }
     function change(){
         $("#gameScore").text(total);
+        console.log(total);
         if(total == desiredNumber){
             alert("You Win");
             win++;
@@ -33,7 +34,7 @@ $(document).ready(function(){
             var val = parseInt($(this).attr("value"));
             console.log(val);
             total += val;
-            change()
+            change();
         });
     });
     reset();
@@ -70,4 +71,19 @@ files.forEach(function(value){
     }
 });
 
+*/
+
+/*
+var sorted = false;
+do{
+    sorted = true;
+    for(var i= 0 ; i < numbers-1; i++){
+        var hold = numbers[i];
+        if(hold > numbers[i+1]){
+            numbers[i] = numbers[i+1];
+            numbers[i+1] = hold;
+            sorted = false;
+        }
+    }
+}while(sorted == false);
 */

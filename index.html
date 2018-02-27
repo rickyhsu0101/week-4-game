@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game</title>
+    <link rel = "stylesheet" type = "text/css" href = "./assets/css/reset.css">
+    <link rel = "stylesheet" type = "text/css" href = "./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class = "orange">
+        <h1>Crystal Collector!</h1>
+    </div>
+    <div class = "yellow">
+        <h2>Instructions</h2>
+        <p>
+            The player will be shown a random number at the start of the game.
+        </p>
+        <p>
+            When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+        </p>     
+        <p>
+            The player wins if their total score matches the random number from the beginning of the game.
+        </p>   
+        <p>
+            The player loses if their score goes above the random number.
+        </p>     
+        <p>
+            The game restarts whenever the player wins or loses.
+        </p>
+    </div>
+    <div id = "scoreBoard">
+        <div id = "desired"></div>
+        <div id = "winLose">
+            <h4>Win: <span id = "win"></span></h4>
+            <h4>Lose: <span id = "lose"></span></h4>            
+        </div>
+    </div>
+    <div id = "crystalButtons">
+        <a class = "button" id = "crystal1" href = "#"></a>
+        <a class = "button" id = "crystal2" href = "#"></a>
+        <a class = "button" id = "crystal3" href = "#"></a>
+        <a class = "button" id = "crystal4" href = "#"></a>
+    </div>
+    <div id = "gameBoard">
+        <h4>Your total score is: </h4>
+        <h4 id = "gameScore"></h4>
+    </div>
+</body>
+</html>

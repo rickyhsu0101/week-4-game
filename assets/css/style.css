@@ -1,0 +1,44 @@
+div{
+    width:50%;
+    margin: auto;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow;
+}
+#scoreBoard{
+    overflow: auto;
+}
+#desired{
+    float: left;
+}
+#winLose{
+    float: left;
+}
+#winLose::after{
+    display: block;
+    clear: left;
+}
+#gameBoard{
+    background: green;
+}
+.button{
+    display: block;
+    width:100px;
+    height: 100px;
+    background-size: contain;
+}
+#crystal1{
+    background-image: url("./../images/blue.jpg");
+}
+#crystal2{
+    background-image: url("./../images/green.jpg");
+}
+#crystal3{
+    background-image: url("./../images/otherBlue.jpg");
+}
+#crystal4{
+    background-image: url("./../images/white.jpg");
+}
